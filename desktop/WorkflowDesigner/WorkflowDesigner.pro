@@ -4,7 +4,18 @@ QT += widgets
 CONFIG += c++11
 
 SOURCES += main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    humantask.cpp \
+    servicetask.cpp \
+    connectionnode.cpp \
+    startnode.cpp \
+    endnode.cpp \
+    gateway.cpp \
+    parallelgateway.cpp \
+    exlusivegateway.cpp \
+    eventbasedgateway.cpp \
+    pool.cpp \
+    lane.cpp
 
 RESOURCES += \
     designer.qrc
@@ -19,4 +30,15 @@ FORMS += \
     mainwindow.ui
 
 HEADERS += \
-    mainwindow.h
+    mainwindow.h \
+    humantask.h \
+    servicetask.h \
+    connectionnode.h \
+    startnode.h \
+    endnode.h \
+    gateway.h \
+    parallelgateway.h \
+    exlusivegateway.h \
+    eventbasedgateway.h \
+    pool.h \
+    lane.h

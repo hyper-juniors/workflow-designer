@@ -7,6 +7,12 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
 
+    ui->graphicsView->setDragMode(QGraphicsView::RubberBandDrag);
+    ui->graphicsView->setRenderHints(QPainter::Antialiasing
+                         | QPainter::TextAntialiasing);
+    ui->graphicsView->setContextMenuPolicy(Qt::ActionsContextMenu);
+
+
     // FIXME correct dimension based on scene view
     scene = new QGraphicsScene(0, 0, 800, 600);
     ui->graphicsView->setScene(scene);
